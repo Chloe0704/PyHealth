@@ -1,3 +1,18 @@
+"""
+Author: Meilin Liu
+NetID: meilinl2
+Paper Title: "PhysioMTL: Personalizing Physiological Patterns using Optimal Transport Multi-Task Regression"
+Paper Link: https://arxiv.org/pdf/2203.12595
+
+Description:
+This file implements a dataset loader for the MMASH dataset, a publicly available
+physiological dataset collected from 22 healthy subjects during daily life.
+The loader downloads, extracts, and parses relevant tables (sleep, activity,
+user info, questionnaire, RR intervals) into structured records compatible with
+the PyHealth framework. It inherits from the BaseDataset class and supports
+flexible table selection via the `tables` argument.
+"""
+
 import os
 import pandas as pd
 import zipfile
